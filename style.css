@@ -640,8 +640,7 @@ xclip
 	position: relative;
 	z-index: 2;
     height: 55vh;
-    
-
+}
 .right-box-pro::before {
     content: "";
     /* background: url(images/country-quilt-dark.png); */
