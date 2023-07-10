@@ -639,7 +639,9 @@ xclip
 .right-box-pro img{
 	position: relative;
 	z-index: 2;
-}
+    height: 55vh;
+    
+
 .right-box-pro::before {
     content: "";
     /* background: url(images/country-quilt-dark.png); */
@@ -813,6 +815,9 @@ SKILLS
 /* * {box-sizing:border-box} */
 
 /* Container for skill bars */
+#HeaderForSkills {
+    padding-top: 3%;
+}
 #conSkills {
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
@@ -825,8 +830,8 @@ SKILLS
 }
 .skills {
   text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
   padding-right: 2px;
   color: white; /* White text color */
 }
@@ -1129,7 +1134,12 @@ SKILLS
 /*------------------------------------------------------------------
     MESSAGE BOXES
 -------------------------------------------------------------------*/
-
+#contactText2 {
+    font-size:medium;
+    opacity: 0.5;
+    margin-left: 5%;
+    
+}
 .event_dit{
 	margin-top: 20px;
 }
@@ -2189,6 +2199,7 @@ select.mobile-device {
     padding: 90px 0 80px !important;
     color: #999;
     background-color: #1f1f1f;
+    
 }
 
 .footer .widget-title {
@@ -2266,6 +2277,8 @@ select.mobile-device {
     text-align: left;
     padding: 30px 0px;
     overflow: hidden;
+    
+    
 }
 
 
@@ -2296,16 +2309,16 @@ select.mobile-device {
 }
 
 
-/* Footer right */
+/* Footer right
 
 .footer-distributed .footer-right {
     float: right;
 }
-
+ */
 
 /* The search form */
 
-.footer-distributed form {
+/* .footer-distributed form {
     position: relative;
 }
 
@@ -2325,7 +2338,7 @@ select.mobile-device {
 
 .footer-distributed form input:focus {
     outline: none;
-}
+} */
 
 
 /* Changing the placeholder color */
@@ -2428,7 +2441,7 @@ select.mobile-device {
     color: #999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 .stat-wrap p {
@@ -2437,7 +2450,7 @@ select.mobile-device {
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 #preloader {
