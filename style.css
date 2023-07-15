@@ -815,27 +815,30 @@ SKILLS
 
 /* Container for skill bars */
 #HeaderForSkills {
-    padding-top: 3%;
+    padding-top: 4%;
+    margin-left: 3.5%;
 }
 #conSkills {
   width: 100%; /* Full width */
+  
   background-color: #ddd; /* Grey background */
   padding-bottom: 1%;
 }
 .skillHeader {
     font-size: x-large;
     color: #333;
-    margin-top: 5%;
+    margin-top: 1%;
+    
 }
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 5px; /* Add top padding */
-  padding-bottom: 5px; /* Add bottom padding */
+/* .skills {
+  text-align: right; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
   padding-right: 2px;
-  color: white; /* White text color */
-}
+  color: white; 
+} */
 
-.AI {width: 90%; background-color: #dd7c0e; margin-bottom: 2%;}
+/* .AI {width: 90%; background-color: #dd7c0e; margin-bottom: 2%;} */
 .ID {width: 90%; background-color: #dd7c0e;margin-bottom: 2%;}
 .XD {width: 75%; background-color: #dd7c0e;margin-bottom: 2%;}
 .PS {width: 60%; background-color: #dd7c0e;margin-bottom: 2%;}
@@ -854,6 +857,77 @@ SKILLS
 .sym {width: 80%; background-color: #dd7c0e;margin-bottom: 2%;}
 .scrum {width: 75%; background-color: #dd7c0e;margin-bottom: 2%;}
 
+.skillRow1 {
+    justify-content: center;
+    gap: 5%;
+}
+.skillRow2 {
+    /* justify-content: center; */
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 2.6%;
+}
+
+.sepSkills {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+.skill-name {
+    color: #6b6b6b;
+    margin-top: 5%;
+
+}
+
+.skill-bar {
+    height: 14px;
+    background:#676767;
+    border-radius: 3px;
+
+}
+
+.skill-per {
+    height: 14px;
+    background: #dd7c0e;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: white;
+    border-radius: 4px;
+    font-size: 13px;
+    top: -45px;
+    right: 0;
+    transform: translateX(50%);
+    color:#333;
+}
+
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg) ;
+    border-radius: 2px;
+    z-index: -1px;
+}
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
 
 
 
