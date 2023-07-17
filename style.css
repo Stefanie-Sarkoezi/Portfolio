@@ -323,7 +323,7 @@ a img.aligncenter {
     content: '';
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background: #dd7c0e;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -454,6 +454,8 @@ xclip
 	margin-top: -5%;
 	position: relative;
 	z-index: 1;
+    
+
 }
 #clouds path {
     fill: #ffffff;
@@ -461,12 +463,18 @@ xclip
     overflow: hidden;
     stroke: #ffffff;
 }
+.wolken  {
+    transform: rotate(180deg);
+    top: +10%;
+   
+}
 
 .section {
     display: block;
     position: relative;
     overflow: hidden;
     padding: 70px 0;
+    
 }
 
 .noover {
@@ -487,6 +495,14 @@ xclip
 
 .section.wb {
     background-color: #ffffff;
+    background-image: url(images/about.png);
+    background-attachment: fixed;
+}
+
+.section.image {
+    background-image: url(images/about.png);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
 }
 
 .section.lb {
@@ -494,8 +510,8 @@ xclip
 }
 
 .section.db {
-    background-color: #111111;
-    margin-top: 5%;
+    background-color: #ddd;
+    
 }
 
 .section.color1 {
@@ -560,8 +576,8 @@ xclip
 }
 
 .section.colorsection p,
-.section.colorsection h3,
-.section.db h3 {
+.section.colorsection h3
+ {
     color: #ffffff;
 }
 
@@ -589,6 +605,16 @@ xclip
 	margin-top: 0px;
 	cursor: pointer;
 }
+.sim-btn-ab {
+    line-height: 50px;
+	height: 50px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	cursor: pointer;
+    background-color: white;
+}
 
 .btn-hover-new::after {
     content: attr(data-text);
@@ -614,7 +640,7 @@ xclip
 }
 
 .btn-hover-new:hover{
-	color: #ffffff;
+	color: #dd7c0e;
 	background-color: #333333;
 }
 .btn-hover-new:hover > span {
@@ -1017,7 +1043,7 @@ SKILLS
     PRICING TABLES
 -------------------------------------------------------------------*/
 
-.pricing-table {
+/* .pricing-table {
     margin: 50px 0 0 0;
     background: #fff;
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
@@ -1104,7 +1130,7 @@ SKILLS
 
 /* Highlighted table */
 
-.pricing-table-highlighted {
+/* .pricing-table-highlighted {
     margin-top: 0;
 }
 
@@ -1127,7 +1153,7 @@ SKILLS
     margin: 0!important;
     text-align: center;
     background-color: #f4f4f4;
-}
+} */ */
 
 
 /*------------------------------------------------------------------
@@ -1321,6 +1347,7 @@ SKILLS
     padding-bottom: 0;
 }
 
+
 .message-box h4 {
     text-transform: uppercase;
     padding: 0;
@@ -1329,20 +1356,23 @@ SKILLS
     letter-spacing: 0.5px;
     font-size: 15px;
     color: #999;
+    
 }
 
 .message-box h2 {
     font-size: 38px;
     font-weight: 300;
     padding: 0 0 10px;
-    margin: 0;
+    margin-bottom: 2%;
     line-height: 62px;
     margin-top: 0;
     text-transform: none;
+    background-color: white;
 }
 
 .message-box p {
     margin-bottom: 20px;
+    background-color: white;
 }
 
 .message-box .lead {
@@ -1561,8 +1591,9 @@ hr.invis1 {
 
 .filter-button-group button.active{
 	background: #333333;
-	color: #fff;
-	box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);	
+	color: #dd7c0e;
+	box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);
+
 }
 
 .filter-button-group button{
@@ -2179,6 +2210,8 @@ select.mobile-device {
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
     background-color: #f2f3f5;
     padding: 40px 30px;
+    border-radius: 2px;
+
 }
 
 .contact_form .form-control {
@@ -2194,7 +2227,7 @@ select.mobile-device {
     resize: none;
     box-shadow: none !important;
     width: 100%;
-	border-radius: 0px;
+	border-radius: 2px;
 }
 
 .contact_form textarea {
@@ -2217,12 +2250,14 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: url(images/contact.png) no-repeat center center #ddd;
+    background-size: 100%;
+    background-attachment: scroll;
 }
 
 
 #contact .section-title p{
-	color: #ffffff;
+	color:#333;
 }
 
 .contact_form textarea.form-control{
